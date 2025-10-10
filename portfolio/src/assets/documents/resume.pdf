@@ -1,0 +1,98 @@
+# Ayush Jha
+
++91 7905325033 | ayushjha115.aj@gmail.com |Bangalore, Karnataka, India
+
+# LinkedIn | GitHub | LeetCode
+
+# EDUCATION
+
+**·Birla Institute of Technology Mesra** December 2021-May 2025
+
+Bachelor of Technology in Information Technology Ranchi,Jharkhand
+
+**。CGPA:8.06**
+
+# EXPERIENCE
+
+**·Synapse Health Tech** June 2025 - Present
+
+Associate Data Scientist Remote
+
+。Leading development of Bankability eye-tracking solution for banking applications using Kotlin and MediaPipe libraries, implementing multiple linear regression algorithms for precise gaze tracking and user behavior analysis, achieving 85-90% accuracy in gaze prediction
+
+。Architected and developed FastAPI backend with WebSocket integration for real-time image segmentation and processing, utilizing OpenCV for computer vision operations and achieving sub-second response times, for the Bankability Project.
+
+。Engineered Dental Radiograph Analysis system integrating two PyTorch models for tooth numbering and disease prediction, with Groq API for LLM inferencing to generate comprehensive dental analysis reports, achieving 90%o accuracy in disease diagnosis.
+
+。Deployed dental radiograph analysis system using Docker containers for both frontend and backend on AWS Elastic Container Registry (ECR) and Elastic Container Service (ECS), ensuring scalable and reliable production environments.
+
+## ·Aspirare Communications January 2025-April 2025
+
+Software Engineering Intern Bengaluru,Karnataka
+
+。Developed and maintained Field Service Management System using React-native, React, Google Maps API,GCP and FastAPI.
+
+。Collaborated with cross-functional teams to optimize business processes and improve system efficiency.
+
+**·Tata Consultancy Services** May 2024-June 2024
+
+Project Intern Noida, Uttar Pradesh
+
+。Engineered an internal TCS project using FastAPI, React, and SQLite, optimizing API response time by 30%.
+
+。Optimized cloud deployment strategy on Azure, improving scalability and reducing downtime.
+
+。Diagnosed API inefficiencies, reducing server response time and enhanced UX.
+
+。Presented technical insights to the leadership team, receiving recognition for architectural improvements.
+
+## PROJECTS
+
+## ·N8N AI News Automation September 2025
+
+Tools: N8N, GNews API, NewsAPI, Google Gemini 2.5 Pro, Telegram API [O]
+
+。Developed an automated news aggregation system using the n8n workflow platform,integrating multiple APIs (GNews, NewsAPI) to collect and process AI-related content with 100
+
+。Implemented AI-powered content summarization using Google Gemini 2.5 Pro model,reducing manual content curation time by 90% and delivering personalized news digests via Telegram integration.
+
+。Architected scalable workflow automation solution with scheduled triggers, data processing pipelines,and multi-channel delivery systems, supporting daily execution and real-time content distribution.
+
+**·Gastrointestinal-Polyp Segmentation** June 2025
+
+Tools:Python,PyTorch, Attention U-Net, Albumentations, CUDA AMP, Grad-CAM,TensorBoard,OpenCV [O]
+
+。Built an Attention U-Net-based deep learning pipeline to generate pixel-level segmentation masks for polyps, achieving 0.92 Dice and 0.89 IoU scores in the Kvasir-SEG benchmark dataset.
+
+。Automated dataset pre-processing and extensive augmentations using AlIbumentations (flips,elastic/grid/optical distortions, brightness, noise), effectively tripling training data and reducing class imbalance.
+
+。 Optimized training using a hybrid loss function (Dice + Focal + Tversky) combined with mixed precision of CUDA AMP, reducing GPU memory usage by 40% and training time per epoch by 25%.
+
+。 Deployed a robust inference module with batch processing CLI, Grad-CAM-based visual explanations,and TensorBoard integration for model transparency and5x faster clinical review workflows.
+
+# ·Rice Disease Detection System November 2024
+
+Tools: Python, React, Tailwind CSS, FastAPI, TensorFlow, Scikit-Learn, NumPy, Pandas, Firebase [O]
+
+。 Built a rice disease detection system using TensorFlow (CNN) and Scikit-learn (Random Forest) with high accuracy.
+
+。Integrated both models into a FastAPI backend for seamless front-end interaction.
+
+。Developed a React-Tailwind form for real-time input of images and environmental data.
+
+。Implemented authentication (email/password, Google) and secured data in Firestore.
+
+# SKILLS
+
+**。Programming Languages:**C++,Python, SQL, JavaScript
+
+**。Frameworks** **and** **Libraries**: FastAPI, NumPy, Pandas, Scikit-Learn, PyTorch, Streamlit, OpenCV,React,Tailwind CSS
+
+**。Database** **Systems**:PostgreSQL, Supabase
+
+**。Cloud** **Technologies**: AWS (IAM, EC2, Lambda, S3, ECR, ECS)
+
+**。AI/ML** **Technologies**:PyTorch, OpenCV, MediaPipe, Groq API, LLM Integration, Computer Vision,Image Segmentation
+
+**。Developer** **Tools**:Git, GitHub, Docker, Ngrok, N8N, TensorBoard, Grad-CAM, WebSockets
+
