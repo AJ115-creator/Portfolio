@@ -69,8 +69,8 @@ const Projects = () => {
       description: 'A comprehensive system for detecting diseases in rice plants using CNN and Random Forest algorithms with real-time web interface.',
       longDescription: 'This agricultural AI solution combines computer vision and machine learning to help farmers detect rice plant diseases early. The system uses TensorFlow for CNN-based image analysis and Scikit-learn for Random Forest classification of environmental data. It features a React-based web interface with Firebase authentication and real-time image processing capabilities.',
       image: '/api/agriculture-ai.svg',
-      github: 'https://github.com/AJ115-creator/Rice-Plant-Disease-Detection-System',
-      demo: null,
+      github: 'https://github.com/AJ115-creator/Rice-Disease-Detection-system',
+      demo: 'https://rice-disease-detection-system-dool.vercel.app/',
       technologies: ['Python', 'React', 'Tailwind CSS', 'FastAPI', 'TensorFlow', 'Scikit-Learn', 'Firebase', 'NumPy', 'Pandas'],
       highlights: [
         'High accuracy disease detection using CNN',
