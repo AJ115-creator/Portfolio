@@ -87,6 +87,31 @@ const Projects = () => {
         'FastAPI Backend Integration'
       ],
       category: 'Agricultural AI'
+    },
+    {
+      id: 4,
+      title: 'Self-Tracking Analytics Dashboard',
+      description: 'A meta-analytics dashboard that tracks its own usage - every filter change and chart click becomes a data point for analysis.',
+      longDescription: 'This unique analytics platform implements the meta-analytics concept where the dashboard tracks its own usage patterns. Built with React + TypeScript frontend and FastAPI backend, it features JWT authentication via Supabase, interactive Recharts visualizations where clicking a bar chart drives a line chart to show time trends, and cookie-based filter persistence. Custom CORS middleware handles dynamic Vercel preview deployment origins.',
+      image: '/dashboard.png',
+      github: 'https://github.com/AJ115-creator/Self-Tracking-Dashboard',
+      demo: 'https://self-tracking-dashboard-4pdw.vercel.app/',
+      technologies: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Supabase', 'Vercel', 'Recharts', 'JWT Auth'],
+      highlights: [
+        'Meta-analytics: dashboard tracks its own usage',
+        'Interactive charts with drill-down (bar → line)',
+        'Filter persistence via cookies across sessions',
+        'Custom CORS for dynamic Vercel preview origins'
+      ],
+      features: [
+        'Real-time Event Tracking (useTracking hook)',
+        'Dynamic Aggregation Queries (date/age/gender)',
+        'JWT Auth with Supabase Integration',
+        'Database Seeding Script for Demo Data',
+        'Responsive Dark UI with Recharts',
+        'RESTful API (/auth, /track, /analytics)'
+      ],
+      category: 'Full-Stack Analytics'
     }
   ];
 
@@ -98,6 +123,8 @@ const Projects = () => {
         return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300';
       case 'Agricultural AI':
         return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300';
+      case 'Full-Stack Analytics':
+        return 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300';
       default:
         return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-300';
     }
@@ -143,27 +170,19 @@ const Projects = () => {
                       <div className="text-center">
                         <div className="w-32 h-32 mx-auto mb-4 flex items-center justify-center">
                           {project.id === 1 && (
-                            <div className="flex items-center space-x-4">
-                              <img 
-                                src="/n8n.png" 
-                                alt="N8N Logo" 
-                                className="w-16 h-16 object-contain"
-                                onError={(e) => {
-                                  e.target.style.display = 'none';
-                                  e.target.nextSibling.style.display = 'block';
-                                }}
-                              />
-                              <img 
-                                src="/telegram.png" 
-                                alt="Telegram Logo" 
-                                className="w-16 h-16 object-contain"
-                                onError={(e) => {
-                                  e.target.style.display = 'none';
-                                }}
-                              />
-                              <div style={{display: 'none'}} className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center">
-                                <span className="text-white text-lg font-bold">N8N</span>
-                              </div>
+                            <img
+                              src="/n8n.png"
+                              alt="N8N Logo"
+                              className="absolute inset-0 w-full h-full object-cover"
+                              onError={(e) => {
+                                e.target.style.display = 'none';
+                                e.target.nextSibling.style.display = 'flex';
+                              }}
+                            />
+                          )}
+                          {project.id === 1 && (
+                            <div style={{display: 'none'}} className="w-24 h-24 bg-primary-600 rounded-full items-center justify-center">
+                              <span className="text-white text-lg font-bold">N8N</span>
                             </div>
                           )}
                           {project.id === 2 && (
@@ -196,6 +215,22 @@ const Projects = () => {
                           {project.id === 3 && (
                             <div style={{display: 'none'}} className="w-24 h-24 bg-yellow-600 rounded-full flex items-center justify-center">
                               <span className="text-white text-lg font-bold">🌾</span>
+                            </div>
+                          )}
+                          {project.id === 4 && (
+                            <img
+                              src="/dashboard.png"
+                              alt="Dashboard Preview"
+                              className="absolute inset-0 w-full h-full object-cover"
+                              onError={(e) => {
+                                e.target.style.display = 'none';
+                                e.target.nextSibling.style.display = 'flex';
+                              }}
+                            />
+                          )}
+                          {project.id === 4 && (
+                            <div style={{display: 'none'}} className="w-24 h-24 bg-purple-600 rounded-full items-center justify-center">
+                              <span className="text-white text-lg font-bold">📊</span>
                             </div>
                           )}
                         </div>

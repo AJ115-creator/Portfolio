@@ -135,7 +135,7 @@ const Skills = () => {
     { number: '1+', label: 'Years Experience', icon: '📅' },
     { number: '6', label: 'Projects Completed', icon: '🚀' },
     { number: '2', label: 'Projects in Progress', icon: '⚙️' },
-    { number: '2', label: 'Companies Worked', icon: '🏢' }
+    { number: '3', label: 'Companies Worked', icon: '🏢' }
   ];
 
   return (
