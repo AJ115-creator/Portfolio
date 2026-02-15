@@ -56,7 +56,7 @@ const About = () => {
         >
           <motion.h2
             ref={titleRef}
-            className="text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-6"
           >
             About <span className="gradient-text">Me</span>
           </motion.h2>
@@ -79,19 +79,19 @@ const About = () => {
           >
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-dark-600 dark:text-dark-300 leading-relaxed">
-                I'm an Associate Data Scientist at Synapse Health Tech, specializing in developing cutting-edge 
-                AI solutions for healthcare applications. With a strong foundation in machine learning, computer vision, 
+                I'm an Associate Data Scientist at Synapse Health Tech, specializing in developing cutting-edge
+                AI solutions for healthcare applications. With a strong foundation in machine learning, computer vision,
                 and full-stack development, I'm passionate about creating intelligent systems that solve real-world problems.
               </p>
-              
+
               <p className="text-dark-600 dark:text-dark-300 leading-relaxed">
-                My experience spans from building eye-tracking solutions for banking applications to developing 
-                medical imaging analysis systems. I enjoy working with technologies like PyTorch, OpenCV, React, 
+                My experience spans from building eye-tracking solutions for banking applications to developing
+                medical imaging analysis systems. I enjoy working with technologies like PyTorch, OpenCV, React,
                 and cloud platforms like AWS to bring innovative ideas to life.
               </p>
 
               <p className="text-dark-600 dark:text-dark-300 leading-relaxed">
-                I have completed my B.Tech in Information Technology from BIT Mesra with a CGPA of 8.06. 
+                I have completed my B.Tech in Information Technology from BIT Mesra with a CGPA of 8.06.
                 I'm always eager to learn new technologies and contribute to meaningful projects that make a difference.
               </p>
             </div>
@@ -107,20 +107,20 @@ const About = () => {
               <div className="flex items-start space-x-4">
                 {/* College Logo */}
                 <div className="flex-shrink-0">
-                  <img 
-                    src="/bit-mesra.png" 
-                    alt="BIT Mesra Logo" 
+                  <img
+                    src="/bit-mesra.png"
+                    alt="BIT Mesra Logo"
                     className="w-16 h-16 object-contain rounded-lg border border-gray-200 dark:border-dark-600"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div style={{display: 'none'}} className="w-16 h-16 bg-primary-600 rounded-lg flex items-center justify-center border border-gray-200 dark:border-dark-600">
+                  <div style={{ display: 'none' }} className="w-16 h-16 bg-primary-600 rounded-lg flex items-center justify-center border border-gray-200 dark:border-dark-600">
                     <span className="text-white text-xs font-bold">BIT</span>
                   </div>
                 </div>
-                
+
                 {/* Education Details */}
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-dark-900 dark:text-white mb-4">
@@ -159,7 +159,7 @@ const About = () => {
             <h3 className="text-2xl font-semibold text-dark-900 dark:text-white mb-6">
               Technical Skills
             </h3>
-            
+
             <div className="space-y-4">
               {['Programming', 'Frameworks', 'AI/ML', 'Cloud', 'Tools'].map((category) => (
                 <div key={category} className="space-y-3">
@@ -175,8 +175,8 @@ const About = () => {
                           className="relative group"
                           initial={{ opacity: 0, scale: 0.8 }}
                           whileInView={{ opacity: 1, scale: 1 }}
-                          transition={{ 
-                            duration: 0.3, 
+                          transition={{
+                            duration: 0.3,
                             delay: index * 0.1,
                             type: "spring",
                             stiffness: 200
@@ -189,7 +189,7 @@ const About = () => {
                               {skill.name}
                             </span>
                           </div>
-                          
+
                           {/* Skill Level Tooltip */}
                           <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-dark-900 dark:bg-white text-white dark:text-dark-900 text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                             {skill.level}% Proficiency

@@ -59,8 +59,8 @@ const Footer = () => {
                 <span className="text-2xl font-bold">Ayush Jha</span>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-                Associate Data Scientist passionate about AI/ML, Computer Vision, and building 
-                intelligent solutions that make a difference in healthcare and beyond.
+                Data Scientist & Full Stack Developer with expertise in AI/ML, frontend & backend
+                development, and cloud technologies — building intelligent, end-to-end solutions.
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
@@ -162,7 +162,7 @@ const Footer = () => {
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               © {currentYear} Ayush Jha. All rights reserved.
             </div>
-            
+
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2 text-gray-400 text-sm">
                 <span>Built with</span>

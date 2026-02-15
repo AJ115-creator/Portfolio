@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { animations } from '../utils/animations';
-import { 
+import {
   FaPython, FaJs, FaReact, FaDocker, FaGitAlt, FaAws, FaDatabase
 } from 'react-icons/fa';
-import { 
+import {
   SiPytorch, SiTensorflow, SiOpencv, SiPostgresql, SiFirebase,
   SiTailwindcss, SiNumpy, SiPandas, SiScikitlearn, SiFastapi,
   SiCplusplus, SiSqlite, SiGooglecloud, SiGooglemaps, SiSocketdotio
@@ -145,7 +145,7 @@ const Skills = () => {
           ref={sectionRef}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-6">
             Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-xl text-dark-600 dark:text-dark-300 max-w-3xl mx-auto">
@@ -232,7 +232,7 @@ const Skills = () => {
                         {skill.level}%
                       </span>
                     </div>
-                    
+
                     {/* Progress Bar */}
                     <div className="w-full bg-gray-200 dark:bg-dark-700 rounded-full h-2 mb-2">
                       <motion.div
@@ -243,7 +243,7 @@ const Skills = () => {
                         viewport={{ once: true }}
                       />
                     </div>
-                    
+
                     {/* Skill Description */}
                     <p className="text-xs text-dark-500 dark:text-dark-400 leading-relaxed">
                       {skill.description}
@@ -268,11 +268,11 @@ const Skills = () => {
               Continuous Learning & Growth
             </h3>
             <p className="text-lg text-dark-600 dark:text-dark-300 leading-relaxed mb-8">
-              I believe in staying current with the latest technologies and continuously expanding my skill set. 
-              My approach combines hands-on experience with formal learning, ensuring I can adapt to new challenges 
+              I believe in staying current with the latest technologies and continuously expanding my skill set.
+              My approach combines hands-on experience with formal learning, ensuring I can adapt to new challenges
               and contribute effectively to any project or team.
             </p>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               <motion.div
                 className="p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800 rounded-xl"
@@ -284,7 +284,7 @@ const Skills = () => {
                   Analytical approach to complex technical challenges
                 </p>
               </motion.div>
-              
+
               <motion.div
                 className="p-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900 dark:to-green-800 rounded-xl"
                 whileHover={{ scale: 1.05 }}
@@ -295,7 +295,7 @@ const Skills = () => {
                   Creative solutions using cutting-edge technologies
                 </p>
               </motion.div>
-              
+
               <motion.div
                 className="p-6 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900 dark:to-purple-800 rounded-xl"
                 whileHover={{ scale: 1.05 }}

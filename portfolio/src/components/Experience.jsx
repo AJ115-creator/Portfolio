@@ -86,7 +86,7 @@ const Experience = () => {
           ref={sectionRef}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-6">
             Work <span className="gradient-text">Experience</span>
           </h2>
           <p className="text-xl text-dark-600 dark:text-dark-300 max-w-3xl mx-auto">
@@ -102,9 +102,8 @@ const Experience = () => {
             {experiences.map((exp, index) => (
               <motion.div
                 key={exp.id}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+                className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -114,9 +113,8 @@ const Experience = () => {
                 <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-dark-800 z-10"></div>
 
                 {/* Content Card */}
-                <div className={`ml-12 md:ml-0 md:w-1/2 ${
-                  index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'
-                }`}>
+                <div className={`ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'
+                  }`}>
                   <motion.div
                     className="card p-6 hover:shadow-xl transition-all duration-300 group"
                     whileHover={{ scale: 1.02 }}
@@ -126,9 +124,9 @@ const Experience = () => {
                       <div className="flex items-center space-x-4">
                         <div className="flex-shrink-0">
                           {exp.id === 1 && (
-                            <img 
-                              src="/synapse.png" 
-                              alt="Synapse Health Tech Logo" 
+                            <img
+                              src="/synapse.png"
+                              alt="Synapse Health Tech Logo"
                               className="w-12 h-12 object-contain rounded-lg"
                               onError={(e) => {
                                 e.target.style.display = 'none';
@@ -137,14 +135,14 @@ const Experience = () => {
                             />
                           )}
                           {exp.id === 1 && (
-                            <div style={{display: 'none'}} className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
+                            <div style={{ display: 'none' }} className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
                               <span className="text-white text-xs font-bold">SHT</span>
                             </div>
                           )}
                           {exp.id === 2 && (
-                            <img 
-                              src="/aspirare.png" 
-                              alt="Aspirare Communications Logo" 
+                            <img
+                              src="/aspirare.png"
+                              alt="Aspirare Communications Logo"
                               className="w-12 h-12 object-contain rounded-lg"
                               onError={(e) => {
                                 e.target.style.display = 'none';
@@ -153,14 +151,14 @@ const Experience = () => {
                             />
                           )}
                           {exp.id === 2 && (
-                            <div style={{display: 'none'}} className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <div style={{ display: 'none' }} className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
                               <span className="text-white text-xs font-bold">AC</span>
                             </div>
                           )}
                           {exp.id === 3 && (
-                            <img 
-                              src="/tcs-logo.png" 
-                              alt="TCS Logo" 
+                            <img
+                              src="/tcs-logo.png"
+                              alt="TCS Logo"
                               className="w-12 h-12 object-contain rounded-lg"
                               onError={(e) => {
                                 e.target.style.display = 'none';
@@ -169,7 +167,7 @@ const Experience = () => {
                             />
                           )}
                           {exp.id === 3 && (
-                            <div style={{display: 'none'}} className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
+                            <div style={{ display: 'none' }} className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
                               <span className="text-white text-xs font-bold">TCS</span>
                             </div>
                           )}

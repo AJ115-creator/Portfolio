@@ -53,9 +53,9 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 sm:px-6">
       <ThreeBackground theme={theme} />
-      
+
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -67,17 +67,17 @@ const Hero = () => {
           >
             <motion.h1
               ref={titleRef}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold text-dark-900 dark:text-white mb-6"
+              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-dark-900 dark:text-white mb-4 sm:mb-6"
             >
               Hi, I'm{' '}
               <span className="gradient-text">Ayush Jha</span>
             </motion.h1>
-            
+
             <motion.p
               ref={subtitleRef}
-              className="text-xl md:text-2xl text-dark-600 dark:text-dark-300 mb-8 max-w-2xl"
+              className="text-base sm:text-lg md:text-2xl text-dark-600 dark:text-dark-300 mb-6 sm:mb-8 max-w-2xl"
             >
-              Associate Data Scientist passionate about AI/ML, Computer Vision, and building intelligent solutions that make a difference.
+              Data Scientist & Full Stack Developer with expertise in AI/ML, frontend & backend development, and cloud technologies — passionate about building intelligent, end-to-end solutions that make a difference.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -87,7 +87,7 @@ const Hero = () => {
             >
               <motion.button
                 onClick={() => scrollToSection('#projects')}
-                className="btn-primary text-lg px-8 py-4"
+                className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -95,7 +95,7 @@ const Hero = () => {
               </motion.button>
               <motion.button
                 onClick={() => scrollToSection('#contact')}
-                className="btn-secondary text-lg px-8 py-4"
+                className="btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -150,9 +150,9 @@ const Hero = () => {
             >
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full blur-2xl opacity-20 scale-110"></div>
-              
+
               {/* Profile Image */}
-              <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white dark:border-dark-800 shadow-2xl">
+              <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white dark:border-dark-800 shadow-2xl">
                 <img
                   src="/picofme.png"
                   alt="Ayush Jha"

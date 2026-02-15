@@ -32,11 +32,11 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
       // EmailJS configuration
       const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY, TO_EMAIL } = EMAILJS_CONFIG;
-      
+
       // Send email using EmailJS
       const result = await emailjs.send(
         SERVICE_ID,
@@ -50,7 +50,7 @@ const Contact = () => {
         },
         PUBLIC_KEY
       );
-      
+
       if (result.status === 200) {
         setSubmitStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
@@ -61,9 +61,9 @@ const Contact = () => {
       console.error('Email sending failed:', error);
       setSubmitStatus('error');
     }
-    
+
     setIsSubmitting(false);
-    
+
     // Reset status after 5 seconds
     setTimeout(() => setSubmitStatus(null), 5000);
   };
@@ -117,7 +117,7 @@ const Contact = () => {
           ref={sectionRef}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-6">
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-xl text-dark-600 dark:text-dark-300 max-w-3xl mx-auto">
@@ -139,7 +139,7 @@ const Contact = () => {
                 Let's Connect
               </h3>
               <p className="text-dark-600 dark:text-dark-300 leading-relaxed mb-8">
-                I'm always excited to discuss new opportunities, collaborate on interesting projects, 
+                I'm always excited to discuss new opportunities, collaborate on interesting projects,
                 or simply chat about technology and innovation. Feel free to reach out through any of the channels below.
               </p>
             </div>
