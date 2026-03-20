@@ -77,7 +77,7 @@ const Hero = () => {
               ref={subtitleRef}
               className="text-base sm:text-lg md:text-2xl text-dark-600 dark:text-dark-300 mb-6 sm:mb-8 max-w-2xl"
             >
-              Data Scientist & Full Stack Developer with expertise in AI/ML, frontend & backend development, and cloud technologies — passionate about building intelligent, end-to-end solutions that make a difference.
+              AI Full Stack Developer with expertise in AI/ML, frontend & backend development, and cloud technologies — passionate about building intelligent, end-to-end solutions that make a difference.
             </motion.p>
 
             {/* CTA Buttons */}

@@ -14,6 +14,31 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 5,
+      title: 'Grocify',
+      description: 'A performant cross-platform mobile application for smart grocery list management with real-time UI.',
+      longDescription: 'Grocify is a comprehensive grocery list management mobile application built for both Android and iOS. It leverages React Native and Expo Router for robust navigation, styled with NativeWind. The app features secure social SSO authentication via Clerk, global state management with Zustand, and a serverless Postgres backend powered by Neon and Drizzle ORM. Additionally, it incorporates background tasks with Expo Notifications and real-time crash reporting using Sentry.',
+      image: '/grocify.png',
+      github: 'https://github.com/AJ115-creator/Grocify',
+      demo: null,
+      technologies: ['React Native', 'Expo', 'Clerk', 'Zustand', 'Neon App', 'Drizzle ORM', 'Sentry'],
+      highlights: [
+        'Cross-Platform Architecture: Developed a performant mobile application for Android and iOS using React Native and Expo Router, implementing a highly responsive UI styled completely with NativeWind (Tailwind CSS) and custom global theming.',
+        'Secure Authentication & State Management: Integrated Clerk to handle seamless social SSO user authentication flows, and utilized Zustand for efficient, globally accessible state management of complex user data and grocery lists.',
+        'Serverless Backend Integration: Designed a full-stack data pipeline by building Expo API routes that connect directly to a Neon Serverless Postgres database, managing local and remote data interactions using Drizzle ORM.',
+        'Advanced Native Features & Observability: Implemented intelligent background tasks using Expo Notifications (including delayed inactivity reminders and custom "soft-prompt" permission modals), while integrating Sentry for real-time crash reporting and in-app user feedback widgets.'
+      ],
+      features: [
+        'React Native & Expo Router architecture',
+        'Secure Auth with Clerk & Zustand State Management',
+        'Serverless backend with Neon DB & Drizzle ORM',
+        'Expo API Routes data pipeline',
+        'Sentry Real-time Crash Reporting',
+        'Expo Notifications & Background Sync'
+      ],
+      category: 'Mobile App Development'
+    },
+    {
       id: 1,
       title: 'N8N AI News Automation',
       description: 'An automated news aggregation system that collects AI-related content from multiple sources, processes it through AI summarization, and delivers curated news via Telegram.',
@@ -117,6 +142,8 @@ const Projects = () => {
 
   const getCategoryColor = (category) => {
     switch (category) {
+      case 'Mobile App Development':
+        return 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300';
       case 'AI/ML Automation':
         return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300';
       case 'Medical AI':
@@ -231,6 +258,22 @@ const Projects = () => {
                           {project.id === 4 && (
                             <div style={{ display: 'none' }} className="w-24 h-24 bg-purple-600 rounded-full items-center justify-center">
                               <span className="text-white text-lg font-bold">📊</span>
+                            </div>
+                          )}
+                          {project.id === 5 && (
+                            <img
+                              src="/grocify.png"
+                              alt="Grocify Preview"
+                              className="absolute inset-0 w-full h-full object-cover"
+                              onError={(e) => {
+                                e.target.style.display = 'none';
+                                e.target.nextSibling.style.display = 'flex';
+                              }}
+                            />
+                          )}
+                          {project.id === 5 && (
+                            <div style={{ display: 'none' }} className="w-24 h-24 bg-teal-600 rounded-full flex items-center justify-center">
+                              <span className="text-white text-lg font-bold">🛒</span>
                             </div>
                           )}
                         </div>

@@ -20,7 +20,7 @@ const Experience = () => {
       id: 1,
       company: 'Synapse Health Tech',
       position: 'Associate Data Scientist',
-      period: 'June 2025 - Present',
+      period: 'June 2025 - Jan 2026',
       location: 'Remote',
       type: 'Full-time',
       description: [
