@@ -1,8 +1,14 @@
-import React, { useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import { animations } from '../utils/animations';
 import ThreeBackground from './ThreeBackground';
+
+const roles = [
+  'AI/ML Engineer',
+  'Full-Stack Developer',
+  'Computer Vision Specialist',
+];
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -10,9 +16,9 @@ const Hero = () => {
   const subtitleRef = useRef(null);
   const imageRef = useRef(null);
   const buttonsRef = useRef(null);
+  const [roleIndex, setRoleIndex] = useState(0);
 
   useEffect(() => {
-    // Animate elements when component mounts
     if (titleRef.current) {
       animations.hero.title(titleRef.current);
     }
@@ -25,6 +31,13 @@ const Hero = () => {
     if (buttonsRef.current) {
       animations.hero.buttons(buttonsRef.current.children);
     }
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRoleIndex((prev) => (prev + 1) % roles.length);
+    }, 3000);
+    return () => clearInterval(interval);
   }, []);
 
   const socialLinks = [
@@ -73,11 +86,27 @@ const Hero = () => {
               <span className="gradient-text">Ayush Jha</span>
             </motion.h1>
 
+            {/* Typing Role Effect */}
+            <div className="h-10 sm:h-12 md:h-14 mb-4 sm:mb-6 flex items-center justify-center lg:justify-start">
+              <AnimatePresence mode="wait">
+                <motion.p
+                  key={roleIndex}
+                  className="text-xl sm:text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.4 }}
+                >
+                  {roles[roleIndex]}
+                </motion.p>
+              </AnimatePresence>
+            </div>
+
             <motion.p
               ref={subtitleRef}
-              className="text-base sm:text-lg md:text-2xl text-dark-600 dark:text-dark-300 mb-6 sm:mb-8 max-w-2xl"
+              className="text-base sm:text-lg md:text-xl text-dark-600 dark:text-dark-300 mb-6 sm:mb-8 max-w-2xl"
             >
-              AI Full Stack Developer with expertise in AI/ML, frontend & backend development, and cloud technologies — passionate about building intelligent, end-to-end solutions that make a difference.
+              Building intelligent systems with Python, PyTorch, React, and cloud infrastructure.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -93,6 +122,19 @@ const Hero = () => {
               >
                 View My Projects
               </motion.button>
+              <motion.a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 inline-flex items-center justify-center gap-2"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Resume
+              </motion.a>
               <motion.button
                 onClick={() => scrollToSection('#contact')}
                 className="btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
