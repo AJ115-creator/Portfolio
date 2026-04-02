@@ -9,6 +9,10 @@ import {
   SiTailwindcss, SiNumpy, SiPandas, SiScikitlearn, SiFastapi,
   SiCplusplus, SiSqlite, SiGooglecloud, SiGooglemaps, SiSocketdotio
 } from 'react-icons/si';
+import {
+  LuCode, LuZap, LuBot, LuCloud, LuDatabase, LuWrench,
+  LuCalendar, LuRocket, LuSettings, LuBuilding2
+} from 'react-icons/lu';
 
 const Skills = () => {
   const sectionRef = useRef(null);
@@ -60,47 +64,47 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Programming Languages',
-      icon: '💻',
+      icon: LuCode,
       skills: ['Python', 'JavaScript', 'C++', 'SQL'],
       color: 'from-blue-500 to-blue-600'
     },
     {
       title: 'Frameworks & Libraries',
-      icon: '⚡',
+      icon: LuZap,
       skills: ['React', 'FastAPI', 'PyTorch', 'TensorFlow', 'Tailwind CSS'],
       color: 'from-purple-500 to-purple-600'
     },
     {
       title: 'AI/ML Technologies',
-      icon: '🤖',
+      icon: LuBot,
       skills: ['Computer Vision', 'OpenCV', 'MediaPipe', 'LLM Integration', 'Image Segmentation'],
       color: 'from-green-500 to-green-600'
     },
     {
       title: 'Cloud & DevOps',
-      icon: '☁️',
+      icon: LuCloud,
       skills: ['AWS', 'Docker', 'Git', 'GCP', 'Firestore'],
       color: 'from-orange-500 to-orange-600'
     },
     {
       title: 'Databases',
-      icon: '🗄️',
+      icon: LuDatabase,
       skills: ['PostgreSQL', 'Supabase', 'SQLite', 'Firestore'],
       color: 'from-indigo-500 to-indigo-600'
     },
     {
       title: 'Tools & Others',
-      icon: '🛠️',
+      icon: LuWrench,
       skills: ['TensorBoard', 'Grad-CAM', 'WebSocket', 'NumPy/Pandas', 'Scikit-learn'],
       color: 'from-red-500 to-red-600'
     }
   ];
 
   const stats = [
-    { number: '1+', label: 'Years Experience', icon: '📅' },
-    { number: '6', label: 'Projects Completed', icon: '🚀' },
-    { number: '2', label: 'Projects in Progress', icon: '⚙️' },
-    { number: '3', label: 'Companies Worked', icon: '🏢' }
+    { number: '1+', label: 'Years Experience', icon: LuCalendar },
+    { number: '6', label: 'Projects Completed', icon: LuRocket },
+    { number: '2', label: 'Projects in Progress', icon: LuSettings },
+    { number: '3', label: 'Companies Worked', icon: LuBuilding2 }
   ];
 
   return (
@@ -136,7 +140,9 @@ const Skills = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="text-3xl mb-2">{stat.icon}</div>
+              <div className="text-3xl mb-2 text-primary-600 dark:text-primary-400 flex justify-center">
+                <stat.icon />
+              </div>
               <div className="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-1">
                 {stat.number}
               </div>
@@ -162,7 +168,7 @@ const Skills = () => {
               {/* Category Header */}
               <div className="flex items-center mb-5">
                 <div className={`w-12 h-12 bg-gradient-to-r ${category.color} rounded-lg flex items-center justify-center text-white text-xl mr-4`}>
-                  {category.icon}
+                  <category.icon />
                 </div>
                 <h3 className="text-lg font-semibold text-dark-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                   {category.title}

@@ -55,7 +55,7 @@ const Navbar = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-primary-600 to-primary-400 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">AJ</span>
             </div>
-            <span className="text-xl font-bold text-dark-900 dark:text-white">
+            <span className="text-xl font-bold text-dark-900 dark:text-white truncate max-w-[140px] xs:max-w-none">
               Ayush Jha
             </span>
           </motion.div>

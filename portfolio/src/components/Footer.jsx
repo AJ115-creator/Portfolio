@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { LuHeart } from 'react-icons/lu';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -172,7 +173,7 @@ const Footer = () => {
                     animate={{ scale: [1, 1.2, 1] }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
-                    ❤️
+                    <LuHeart className="inline-block" fill="currentColor" />
                   </motion.span>
                   <span>React</span>
                   <span>•</span>

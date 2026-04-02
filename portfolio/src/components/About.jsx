@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { animations } from '../utils/animations';
+import { LuCalendar, LuRocket, LuSettings, LuBuilding2 } from 'react-icons/lu';
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -211,18 +212,30 @@ const About = () => {
               viewport={{ once: true }}
             >
               <div className="text-center p-4 bg-white dark:bg-dark-800 rounded-lg shadow-sm">
+                <div className="flex justify-center mb-2 text-primary-600 dark:text-primary-400 text-2xl">
+                  <LuCalendar />
+                </div>
                 <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">1+</div>
                 <div className="text-sm text-dark-600 dark:text-dark-400">Years Experience</div>
               </div>
               <div className="text-center p-4 bg-white dark:bg-dark-800 rounded-lg shadow-sm">
+                <div className="flex justify-center mb-2 text-primary-600 dark:text-primary-400 text-2xl">
+                  <LuRocket />
+                </div>
                 <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">6</div>
                 <div className="text-sm text-dark-600 dark:text-dark-400">Projects Completed</div>
               </div>
               <div className="text-center p-4 bg-white dark:bg-dark-800 rounded-lg shadow-sm">
+                <div className="flex justify-center mb-2 text-primary-600 dark:text-primary-400 text-2xl">
+                  <LuSettings />
+                </div>
                 <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">2</div>
                 <div className="text-sm text-dark-600 dark:text-dark-400">Projects in Progress</div>
               </div>
               <div className="text-center p-4 bg-white dark:bg-dark-800 rounded-lg shadow-sm">
+                <div className="flex justify-center mb-2 text-primary-600 dark:text-primary-400 text-2xl">
+                  <LuBuilding2 />
+                </div>
                 <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">3</div>
                 <div className="text-sm text-dark-600 dark:text-dark-400">Companies</div>
               </div>

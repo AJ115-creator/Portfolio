@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { animations } from '../utils/animations';
 import emailjs from '@emailjs/browser';
 import { EMAILJS_CONFIG } from '../config/emailjs';
+import { LuMail, LuPhone, LuMapPin, LuFileText } from 'react-icons/lu';
 
 const Contact = () => {
   const sectionRef = useRef(null);
@@ -70,19 +71,19 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: '📧',
+      icon: LuMail,
       label: 'Email',
       value: 'ayushjha115.aj@gmail.com',
       href: 'mailto:ayushjha115.aj@gmail.com'
     },
     {
-      icon: '📱',
+      icon: LuPhone,
       label: 'Phone',
       value: '+91 7905325033',
       href: 'tel:+917905325033'
     },
     {
-      icon: '📍',
+      icon: LuMapPin,
       label: 'Location',
       value: 'Bangalore, Karnataka, India',
       href: '#'
@@ -158,7 +159,7 @@ const Contact = () => {
                   viewport={{ once: true }}
                 >
                   <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center text-2xl mr-4 group-hover:bg-primary-600 group-hover:text-white transition-all duration-300">
-                    {info.icon}
+                    <info.icon />
                   </div>
                   <div>
                     <p className="font-medium text-dark-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
@@ -210,7 +211,7 @@ const Contact = () => {
             >
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center text-white text-xl mr-3">
-                  📄
+                  <LuFileText />
                 </div>
                 <div>
                   <h4 className="font-semibold text-dark-900 dark:text-white">

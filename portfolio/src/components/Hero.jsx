@@ -66,7 +66,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 sm:px-6">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 sm:px-6 pt-20 lg:pt-0">
       <ThreeBackground theme={theme} />
 
       <div className="container-custom relative z-10">
@@ -80,7 +80,7 @@ const Hero = () => {
           >
             <motion.h1
               ref={titleRef}
-              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-dark-900 dark:text-white mb-4 sm:mb-6"
+              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-dark-900 dark:text-white mb-4 sm:mb-6"
             >
               Hi, I'm{' '}
               <span className="gradient-text">Ayush Jha</span>
